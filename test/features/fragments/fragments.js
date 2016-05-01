@@ -34,7 +34,8 @@ var fragments = function (text)
             age: element.bind(null, by.id('age')),
             email: element.bind(null, by.id('email')),
             phone: element.bind(null, by.id('phone'))
-        }, student: {
+        },
+        student: {
             table: element.bind(null, by.id('students')),
             firstName: element.bind(null, by.css('td:nth-of-type(1)')),
             lastName: element.bind(null, by.css('td:nth-of-type(2)')),
