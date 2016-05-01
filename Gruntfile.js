@@ -123,11 +123,11 @@ module.exports = function (grunt)
 
       grunt.registerTask ('serve', ['connect:livereload', 'watch']);
 
-      grunt.registerTask ('verify', ['jshint:verify', 'karma:unit', 'connect:test', 'protractor_webdriver', 'protractor:firefox']);
+      grunt.registerTask ('verify', ['jshint:verify', 'karma:unit', 'connect:test', /*'protractor_webdriver',*/ 'protractor:firefox']);
 
       grunt.registerTask ('test:dev', ['karma:dev']);
 
-      grunt.registerTask ('test:e2e', ['connect:test', 'protractor_webdriver', 'protractor:chrome']);
+      grunt.registerTask ('test:e2e', ['connect:test', /*'protractor_webdriver',*/ 'protractor:chrome']);
 
       grunt.registerTask ('default', ['serve']);
 };
